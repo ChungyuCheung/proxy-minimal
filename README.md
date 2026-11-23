@@ -26,4 +26,5 @@
 1. 在 **配置** 页点击右上角 **+**，粘贴以下链接下载并选用该配置：
    `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/shadowrocket/cy-minimal.conf`
 2. 回到 **首页**，**手动选定 1 个干净的美/日原生或家宽节点** 长期固定使用（所有海外流量均跟随首页当前节点）。
-3. 如需扩展内网域名，在本地副本的 `[General]`（`skip-proxy`）、`[Rule]` 与 `[Host]` 中补充对应域名（如 `xxx.com`）即可。
+3. 已默认开启 `[MITM]`（`enable = true`、`h2 = true`）以支持模块（去广告、重写、翻译、天气、定位等）；首次使用时请在 **配置 → `cy-minimal.conf` → HTTPS 解密** 中确认已绑定本机 CA 证书并在系统「证书信任设置」中开启信任。
+4. 如需扩展内网域名，在本地副本的 `[General]`（`skip-proxy`）、`[Rule]` 与 `[Host]` 中补充对应域名（如 `xxx.com`）即可。
