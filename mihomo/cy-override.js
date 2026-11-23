@@ -1,8 +1,8 @@
 /**
  * ===================================================================
- * cy-override.js v1.0.0 | Mihomo 极简防封全局覆写脚本
+ * cy-override.js v1.0.1 | Mihomo 极简防封全局覆写脚本
  * 作者：ChungyuCheung
- * 更新时间：2026-11-24 00:38 UTC+8
+ * 更新时间：2026-11-24 00:53 UTC+8
  * 适用客户端：Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等
  * 适用策略：绕过大陆 + 全局单一固定纯净出口 + 内网 DHCP 直连
  * 仓库地址：https://github.com/ChungyuCheung/proxy-minimal
@@ -57,7 +57,7 @@ function main(config) {
   // 2. 防泄露 DNS + 内网 DHCP DNS 策略
   const nameserverPolicy = {
     "geosite:private": "system",
-    "geosite:cn": ["223.5.5.5", "119.29.29.29"]
+    "geosite:cn": ["system", "223.5.5.5"]
   };
   USER_CONFIG.internalDomains.forEach((domain) => {
     nameserverPolicy[domain] = "system";
