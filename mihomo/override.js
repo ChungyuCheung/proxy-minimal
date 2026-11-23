@@ -1,6 +1,6 @@
 /**
- * Mihomo（Bettbox / Clash Verge Rev / Mihomo Party 等）极简防封全局覆写脚本（绕过大陆 + 全局单一固定出口）
- * 适用仓库：https://github.com/ChungyuCheung/mihomo-override
+ * Mihomo（Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等）极简防封全局覆写脚本（绕过大陆 + 全局单一固定出口）
+ * 适用仓库：https://github.com/ChungyuCheung/proxy-minimal
  */
 
 // ==================== 用户自定义区 ====================
