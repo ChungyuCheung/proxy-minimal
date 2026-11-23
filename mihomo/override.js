@@ -32,7 +32,7 @@ function main(config) {
   const proxies = Array.isArray(config.proxies) ? config.proxies : [];
   const allProxyNames = proxies.map((p) => p.name).filter(Boolean);
 
-  // 过滤掉港/澳/中/俄及机场信息节点，防止误选导致 Claude 封号
+  // 过滤掉港/澳/中/俄及机场信息节点，防止误选导致 AI 服务风控封号
   const excludeRegex = /香港|HK|Hong\s?Kong|澳门|MO|Macau|中国|CN|China|俄罗斯|RU|Russia|剩余|到期|官网|重置|流量|套餐|邀请/i;
   let cleanProxies = allProxyNames.filter((name) => !excludeRegex.test(name));
   if (cleanProxies.length === 0) {
@@ -134,7 +134,7 @@ function main(config) {
     "RULE-SET,private_domain,DIRECT",
     "RULE-SET,private_ip,DIRECT,no-resolve",
     "RULE-SET,cn_domain,DIRECT",
-    "RULE-SET,cn_ip,DIRECT,no-resolve",
+    "RULE-SET,cn_ip,DIRECT",
     "AND,((NETWORK,UDP),(DST-PORT,443)),REJECT",
     "MATCH,Proxy"
   ];
