@@ -1,6 +1,12 @@
 /**
- * Mihomo（Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等）极简防封全局覆写脚本（绕过大陆 + 全局单一固定出口）
- * 适用仓库：https://github.com/ChungyuCheung/proxy-minimal
+ * ===================================================================
+ * cy-override.js v1.0.0 | Mihomo 极简防封全局覆写脚本
+ * 作者：ChungyuCheung
+ * 更新时间：2026-11-24 00:38 UTC+8
+ * 适用客户端：Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等
+ * 适用策略：绕过大陆 + 全局单一固定纯净出口 + 内网 DHCP 直连
+ * 仓库地址：https://github.com/ChungyuCheung/proxy-minimal
+ * ===================================================================
  */
 
 // ==================== 用户自定义区 ====================

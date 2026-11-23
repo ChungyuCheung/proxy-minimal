@@ -6,8 +6,8 @@
 
 | 客户端 | 文件 | 远程链接 |
 |---|---|---|
-| **Mihomo 系列**（Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等） | `mihomo/override.js` | `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/mihomo/override.js` |
-| **Shadowrocket（小火箭）** | `shadowrocket/minimal.conf` | `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/shadowrocket/minimal.conf` |
+| **Mihomo 系列**（Bettbox / Clash Verge Rev / Mihomo Party / FlClash 等） | `mihomo/cy-override.js` | `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/mihomo/cy-override.js` |
+| **Shadowrocket（小火箭）** | `shadowrocket/cy-minimal.conf` | `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/shadowrocket/cy-minimal.conf` |
 
 ## 核心特性
 * **内网 DHCP DNS 直连**：支持自定义内网域名（如 `xxx.com`）及常见内网后缀（`lan` / `local` / `internal` / `home.arpa`）走系统 `system` DNS 解析，返回真实内网 IP。
@@ -18,12 +18,12 @@
 
 ### 1. Mihomo 系列客户端（Bettbox / Clash Verge Rev / Mihomo Party / FlClash）
 1. 在客户端的 **覆写 / 脚本（Override / Script）** 中新建远程 JavaScript 脚本，填入：
-   `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/mihomo/override.js`
+   `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/mihomo/cy-override.js`
 2. 启用该覆写后，进入 **代理** 面板的 `Proxy` 组，**手动选定 1 个干净的美/日原生或家宽节点** 长期固定使用。
 3. 验证内网解析：`nslookup nas.xxx.com` 返回真实内网 IP 即表示生效。
 
 ### 2. Shadowrocket（小火箭）
 1. 在 **配置** 页点击右上角 **+**，粘贴以下链接下载并选用该配置：
-   `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/shadowrocket/minimal.conf`
+   `https://raw.githubusercontent.com/ChungyuCheung/proxy-minimal/main/shadowrocket/cy-minimal.conf`
 2. 进入 **配置 → 策略组 → Proxy**，**手动选定 1 个干净的美/日原生或家宽节点** 长期固定使用。
 3. 如需扩展内网域名，在本地副本的 `[General]`（`skip-proxy`）、`[Rule]` 与 `[Host]` 中补充对应域名（如 `xxx.com`）即可。
